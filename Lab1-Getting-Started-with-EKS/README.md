@@ -49,7 +49,7 @@ To create your cluster VPC:
 Next step is to prepare a client machine to install kubectl and manage your EKS Cluster/WorkerNodes. We will use Cloud9 for this purpose. Spin up a Cloud9 instance by going to https://ap-southeast-1.console.aws.amazon.com/cloud9/home/product.
 
 **IMPORTANT!** 
-Cloud9 rotate credentials (secret/access key) and this is not supported by kubectl, because it detect/match the exact access key that represent IAM User that is used to initially create the cluster.
+Cloud9 rotate credentials (secret/access key) and this is not supported by kubectl, because kubectl detect/match the exact access key that represent IAM User that is used to initially create the cluster.
 If you use Cloud9, then ensure you go to > Preferences -> AWS Settings -> Turn off "AWS managed temporary credentials" 
 and back to your Cloud9 terminal and run 
 
